@@ -2,10 +2,24 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #f2f2f2;
+  background-color: #e8d19f; /* Deep shade of purple */
+  color: #000000;
 }
+
+p {
+  font-weight: 550; /* Aumenta il peso del carattere al valore di 700 */
+}
+
+h1, h2, h3, h5, h6 {
+  color: #f9a01b; /* Bright shade of yellow */
+}
+
+h4{
+  color: #000000;
+}
+
 header {
-  background-color: #212121;
+  background-color: #98002e;
   color: #fff;
   padding: 1rem;
   display: flex;
@@ -13,7 +27,10 @@ header {
   align-items: center;
 }
 header h1 {
+  font-size: 3rem;
+  text-align: center;
   margin: 0;
+  flex: 1;
 }
 nav {
   display: flex;
@@ -63,3 +80,130 @@ footer {
   padding: 1rem;
   text-align: center;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+
+.product-grid {
+  background-color: #eee1c6;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.product-grid li {
+  height: 500px; /* You can adjust this value to fit your design */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-grid li img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.product-name {
+  margin: 0;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.product-price {
+  margin: 5px 0 0 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header a img {
+  vertical-align: middle; /* center the logo vertically */
+  margin-right: 0.5rem;
+  width: 80px;
+  height: 80px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  margin-left: 6.5rem;
+  margin-right: 0.0025rem;
+}
+
+  /* Form styles */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #0066cc;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #003399;
+  }
+  
+  form {
+    width: 300px;
+    margin: 100px auto;
+    background-color: #eee1c6;
+    padding: 30px;
+    border: 1px solid #e5c991;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  body {
+    background-image: url('./img/background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-box {
+    background-color: #f9e9c0; /* White background with 80% opacity */
+    padding: 20px;
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .hero-box img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50%;
+  }
