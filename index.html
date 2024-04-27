@@ -1,33 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to BasketWorld, your ultimate destination for basketball news and information.">
+  <meta name="keywords" content="basketball, NBA, news, information, BasketWorld">
   <link rel="stylesheet" href="./css/styles.css">
-	<title>BasketWorld</title>
+  <title>BasketWorld - Home</title>
 </head>
 <body>
-	<header>
-		<a href="./index.html">
-			<img src="./img/logo.jpeg" alt="BasketWorld Logo" width="40" height="40">
-		</a>
-		<h1>The Basket-World</h1>
-		<nav>
-      <a href="./index.html">Home</a>
-			<a href="./about.html">About</a>
-			<a href="./contact.html">Contact</a>
-			<a href="./shop.html">Shop</a>
-      <a href="./login_form.html">Login</a>
-		</nav>
-	</header>
-	<main>
-		<div class="hero-box">
-			<img src="./img/background.jpg" alt="Hero Image"> <!-- Replace with your hero image -->
-			<h2>Welcome to Our Basketball Site</h2>
-			<p>Here you can find all the latest news and information about basketball and the NBA. Whether you're a fan of the game or just looking to learn more, we have something for everyone.</p>
-			<button style="background-color: #fbc02d; color: #fff; padding: 0.5rem 1rem; border: none; border-radius: 5px; cursor: pointer;">Explore Now</button>
+  <header>
+    <a href="./index.html">
+      <img src="./img/logo.jpeg" alt="BasketWorld Logo" width="40" height="40">
+    </a>
+    <h1>The Basket-World</h1>
+    <nav role="navigation">
+      <a href="./index.html" role="menuitem">Home</a>
+      <a href="./contact.html" role="menuitem">Contact</a>
+      <a href="./shop.html" role="menuitem">Shop</a>
+      <a href="./login_form.html" role="menuitem">Login</a>
+    </nav>
+  </header>
+  <main>
+	<div class="hero-box">
+		<img src="./img/background.jpg" alt="Hero Image">
+		<h2>Welcome to Our Basketball Site</h2>
+		<p>Benvenuti nel mondo del basket, un universo dove storia e regole si fondono in un'emozionante partita. Esplora con noi questo affascinante sport, dalle sue origini fino alle evoluzioni moderne, che ha conquistato il cuore di milioni di appassionati in tutto il mondo.</p>
+	</div>
+		<div class="tabs">
+			<button class="tab-button active" data-tab="tab1">Regole</button>
+			<button class="tab-button" data-tab="tab2">Strategie</button>
+			<button class="tab-button" data-tab="tab3">Storia</button>
 		</div>
-	</main>
-	<footer>
-		<p>&copy; 2023 BasketWorld. All rights reserved.</p>
-	</footer>
+		<div class="tab-panels">
+			<div class="tab-panel active" id="tab1">
+				<h2>Le Regole Fondamentali</h2>
+				<p>Il basket si fonda su poche e semplici regole</p>
+				<p>Le principali sono tre:</p>
+				<a href='./rules.html'>
+					<button class="button-rule" role="menuitem">Regole</button>
+				</a>
+			</div>
+			<div class="tab-panel" id="tab2">
+			  <h2>Le Grandi Strategie</h2>
+			  <p>Le più grandi strategie portano alle più grandi vittorie</p>
+			  <p>I più grandi giocatori hanno da sempre inventato e perfezionato le sue tecniche</p>
+			  <p>Qui vi parleremo delle più famose e importanti della storia del basket</p>
+			  <a href='./strategies.html'>
+				<button class="button-rule" role="menuitem">Strategie</button>
+			</a>
+			</div>
+			<div class="tab-panel" id="tab3">
+			  <h2>La Grande Storia</h2>
+			  <p>Venite insieme a noi 
+			  <p>Per scoprire la storia del basket</p>
+			  <a href='./story.html'>
+				<button class="button-rule" role="menuitem">Storia</button>
+			</a>
+			</div>
+		  </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 BasketWorld. All rights reserved.</p>
+  </footer>
+  <script src="./javascript/script.js"></script>
 </body>
 </html>
